@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Interativo - 7DayCode</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <img src="assets/alurasemfundo.png" alt="">
+            <img src="assets/oneoraclesemfundo.png" alt=""> 
+        </div>            
+        <h1>Minha Solução Desafio 02 - 7DayCode - Alura</h1>
+        
+        <!-- Explicação da solução -->
+        <section>
+            <h2>Explicação da Solução</h2>
+            <p>O objetivo deste desafio é capturar informações do usuário e exibir uma mensagem personalizada com base nas respostas fornecidas. Além disso, um questionamento extra avalia o interesse do usuário na linguagem escolhida.</p>
+            
+            <h3>Passos da Implementação:</h3>
+            <ul>
+                <li>Solicita o nome do usuário.</li>
+                <li>Solicita a idade do usuário.</li>
+                <li>Solicita a linguagem de programação que o usuário está estudando.</li>
+                <li>Exibe uma mensagem personalizada com as respostas capturadas.</li>
+                <li>Pergunta se o usuário gosta da linguagem e exibe uma resposta condicional.</li>
+            </ul>
+            
+            <h3>Exemplo de Implementação:</h3>
+            <pre>
+                <code>
+                    let nome = prompt("Qual o seu nome?");
+                    let idade = prompt("Quantos anos você tem?");
+                    let linguagem = prompt("Qual linguagem de programação você está estudando?");
+
+                    alert(`Olá ${nome}, você tem ${idade} anos e já está aprendendo ${linguagem}!`);
+
+                    let resposta = prompt(`Você gosta de estudar ${linguagem}? Responda com 1 para SIM ou 2 para NÃO.`);
+                    
+                    if (resposta == 1) {
+                        alert("Muito bom! Continue estudando e você terá muito sucesso.");
+                    } else if (resposta == 2) {
+                        alert("Ahh que pena... Já tentou aprender outras linguagens?");
+                    } else {
+                        alert("Resposta inválida. Por favor, responda com 1 ou 2.");
+                    }
+                </code>
+            </pre>
+        </section>
+        
+        <h2>Se preferir vc pode abrir  o console para ver os resultados</h2>
+        <p>Pressione F12 ou clique com o botão direito e selecione "Inspecionar" para abrir o console.</p>                 
+        <div>    
+            <button onclick="window.location.reload()">Recarregar Página</button>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2025 - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
